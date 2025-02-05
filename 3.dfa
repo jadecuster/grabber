@@ -1,0 +1,17 @@
+alphabet: {o, c, r, w}
+start: 
+accepting: {}
+
+// describe a DFA that recognizes the set of valid file operation sequences.
+//
+// o - open
+// c - close
+// r - read
+// w - write
+//
+// constraints:
+// - the file is initially closed
+// - the file can be read from/written to only while it is open 
+// - the file has to be closed at the end
+// - an open file can be re-opened
+// - an closed file cannot be closed again

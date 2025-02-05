@@ -1,0 +1,9 @@
+alphabet: {a, b}
+start: 0 
+accepting: {2}
+
+// describe a DFA that recognizes { w | w contains exactly 2 as }
+0 (a -> 1) (b -> 0)
+1 (a -> 2) (b -> 1)
+2 (a -> moreThan2) (b -> 2)
+moreThan2 (a -> moreThan2) (b -> moreThan2)

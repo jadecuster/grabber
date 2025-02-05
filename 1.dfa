@@ -1,0 +1,8 @@
+alphabet: {a, b}
+start: empty
+accepting: {qA}
+
+// Describe a DFA that recognizes { w | w starts with a }
+empty (a -> qA) (b -> qB)
+qA (a -> qA) (b -> qA)
+qB (a -> qB) (b -> qB)
