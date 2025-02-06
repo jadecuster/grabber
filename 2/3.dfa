@@ -1,5 +1,13 @@
 alphabet: {0, 1}
-start: // your start state goes here
-accepting: {}  // the accepting states go here
+start: q0
+accepting: {q3, q6, q7}
 
-// state transitions go here
+q0 (0 -> q1) (1 -> q4)
+q1 (0 -> qReject) (1 -> q2)
+q2 (0 -> qReject) (1 -> q3)
+q3 (0 -> qReject) (1 -> qReject)
+q4 (0 -> q5) (1 -> q7)
+q5 (0 -> q6) (1 -> qReject)
+q6 (0 -> qReject) (1 -> qReject)
+q7 (0 -> qReject) (1 -> qReject)
+qReject (0 -> qReject) (1 -> qReject)
