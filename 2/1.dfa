@@ -1,0 +1,5 @@
+alphabet: {a, b}
+start: // your start state goes here
+accepting: {}  // the accepting states go here
+
+// state transitions go here
